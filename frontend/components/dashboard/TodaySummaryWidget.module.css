@@ -1,0 +1,57 @@
+.summaryContent {
+  margin-bottom: 15px;
+}
+
+.summaryContent p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 8px;
+  white-space: pre-wrap; /* Respect newlines from backend if any */
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  color: #777;
+  display: block; /* Make it take its own line or space */
+  text-align: right;
+}
+
+.loadingText,
+.errorText,
+.noSummaryText {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.errorText {
+  color: #d9534f; /* Red for errors */
+}
+
+.actionButton {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+  margin-top: auto; /* Pushes button to the bottom if card has flex-grow */
+}
+
+.actionButton:hover {
+  background-color: #0056b3;
+}
+
+.actionButton:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  opacity: 0.7;
+}

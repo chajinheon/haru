@@ -1,0 +1,16 @@
+.journalList {
+  padding: 0;
+  margin: 20px 0 0 0; /* Add some margin to the top */
+  list-style-type: none; /* Ensure no bullets */
+}
+
+.emptyMessage {
+  text-align: center;
+  color: #6c757d; /* Bootstrap muted color */
+  font-size: 1.15rem;
+  padding: 25px;
+  background-color: #f8f9fa; /* Light gray background */
+  border-radius: 8px;
+  margin-top: 30px;
+  border: 1px dashed #ced4da; /* Dashed border */
+}

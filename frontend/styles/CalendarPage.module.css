@@ -1,0 +1,53 @@
+.calendarPageContainer {
+  max-width: 1100px; /* Adjust as needed for better calendar display */
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.calendarPageContainer h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.calendarWrapper {
+  /* Add any specific wrapper styles here if needed, e.g., for box shadow or borders */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px; /* Optional padding around the calendar */
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Styling for completed events in FullCalendar */
+/* This needs to be a global style or specifically target FullCalendar's classes */
+/* For CSS Modules, you might need to apply this globally or use :global selector */
+/* If fc-event-completed is added via className prop to FullCalendar events */
+:global(.fc-event-completed) {
+  background-color: #28a745 !important; /* Green for completed tasks */
+  border-color: #1e7e34 !important; /* Darker green border */
+}
+
+:global(.fc-event-completed .fc-event-title), 
+:global(.fc-event-completed .fc-event-time) {
+  color: white !important; /* Ensure text is readable on green background */
+}
+
+/* Optional: Style for event description if rendered */
+:global(.fc-event-main-frame p) { 
+  font-size: 0.8em;
+  margin: 3px 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #f0f0f0; /* Lighter color for description, adjust if needed */
+}
+
+:global(.fc-event-completed .fc-event-main-frame p) {
+  color: #e6ffe6; /* Very light green for description on completed events */
+}
+
+/* Ensure popovers (like "more" events popover) are above other elements */
+:global(.fc-popover) {
+  z-index: 1010 !important; /* Higher than modal backdrop (1000) */
+}

@@ -1,0 +1,102 @@
+.journalForm {
+  background-color: #fdfdfd; /* Slightly off-white */
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.journalForm h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  color: #2c3e50; /* Dark blue-gray */
+  text-align: center;
+}
+
+.journalForm div {
+  margin-bottom: 18px;
+}
+
+.journalForm label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #34495e; /* Medium blue-gray */
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bdc3c7; /* Light gray border */
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #3498db; /* Blue focus */
+  outline: none;
+}
+
+.textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.formActions {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+  justify-content: flex-end; /* Align buttons to the right */
+}
+
+.saveButton,
+.cancelButton {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+}
+
+.saveButton {
+  background-color: #27ae60; /* Green */
+  color: white;
+}
+
+.saveButton:hover {
+  background-color: #229954;
+}
+
+.saveButton:active {
+  transform: translateY(1px);
+}
+
+.saveButton:disabled {
+  background-color: #a3e9a4;
+  cursor: not-allowed;
+}
+
+.cancelButton {
+  background-color: #7f8c8d; /* Gray */
+  color: white;
+}
+
+.cancelButton:hover {
+  background-color: #6c7a7b;
+}
+
+.cancelButton:active {
+  transform: translateY(1px);
+}
+
+.cancelButton:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}

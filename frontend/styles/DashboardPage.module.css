@@ -1,0 +1,41 @@
+.dashboardContainer {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.dashboardContainer h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 2rem;
+}
+
+.dashboardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem; /* Increased gap for better spacing */
+}
+
+.gridItem {
+  /* Individual grid items will take the height of their content, 
+     or can be forced to a specific height if needed */
+}
+
+/* Example for spanning items if needed */
+.gridItemSpan2 {
+  grid-column: span 2;
+}
+
+/* Responsive adjustments - example for smaller screens */
+@media (max-width: 992px) { /* Adjust breakpoint as needed */
+  .gridItemSpan2 {
+    grid-column: span 1; /* Stack span 2 items on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboardGrid {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+  }
+}

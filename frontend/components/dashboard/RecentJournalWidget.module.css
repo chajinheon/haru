@@ -1,0 +1,39 @@
+.journalContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.journalTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 4px 0;
+}
+
+.journalDate {
+  font-size: 0.8rem;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.journalPreview {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+  white-space: pre-wrap; /* Respect newlines for preview */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* For limiting lines, more complex and might need JS or -webkit-line-clamp */
+  max-height: calc(1.5em * 3); /* Approx 3 lines, adjust 1.5em based on line-height */
+}
+
+.widgetFooter {
+  margin-top: auto; /* Pushes the footer to the bottom of the card */
+  padding-top: 10px;
+  border-top: 1px solid #f0f0f0;
+  text-align: right;
+}
+
+.widgetFooter a {
+  font-size: 0.85rem;
+}

@@ -1,0 +1,16 @@
+.noteList {
+  padding: 0;
+  margin: 20px 0 0 0; /* Add some margin to the top */
+  list-style-type: none; /* Ensure no bullets */
+}
+
+.emptyMessage {
+  text-align: center;
+  color: #6c757d; /* Bootstrap muted color */
+  font-size: 1.1rem;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light gray background */
+  border-radius: 6px;
+  margin-top: 25px;
+  border: 1px dashed #ced4da; /* Dashed border */
+}

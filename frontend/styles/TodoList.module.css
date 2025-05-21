@@ -1,0 +1,14 @@
+.todoList {
+  padding: 0;
+  margin: 0; /* Reset default list margins */
+}
+
+.emptyMessage {
+  text-align: center;
+  color: #777;
+  font-size: 1.1rem;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  margin-top: 20px;
+}

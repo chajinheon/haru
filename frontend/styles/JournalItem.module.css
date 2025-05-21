@@ -1,0 +1,104 @@
+.journalItem {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  list-style-type: none;
+}
+
+.journalItem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #eee;
+  padding-bottom: 10px;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #777;
+  font-style: italic;
+}
+
+.contentPreview {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  white-space: pre-wrap; /* Respects newlines and whitespace from textarea */
+}
+
+.itemFooter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  border-top: 1px dashed #eee;
+}
+
+.mood, .energy, .satisfaction {
+  background-color: #f8f9fa;
+  padding: 5px 10px;
+  border-radius: 15px; /* Pill shape */
+  border: 1px solid #e9ecef;
+}
+
+.itemActions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.editButton,
+.deleteButton {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out, opacity 0.2s ease;
+}
+
+.editButton {
+  background-color: #5bc0de; /* Info blue */
+  color: white;
+}
+
+.editButton:hover {
+  background-color: #31b0d5;
+}
+
+.deleteButton {
+  background-color: #e74c3c; /* Danger red */
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #c0392b;
+}
+
+.editButton:disabled,
+.deleteButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

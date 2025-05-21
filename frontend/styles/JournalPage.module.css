@@ -1,0 +1,71 @@
+.journalContainer {
+  max-width: 950px; /* Wider container for journal entries */
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.journalContainer h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50; /* Dark blue-gray, same as form title */
+  font-size: 2rem;
+}
+
+.addEntryButton {
+  display: block;
+  margin: 0 auto 25px auto;
+  padding: 12px 25px;
+  background-color: #3498db; /* Primary blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.addEntryButton:hover {
+  background-color: #2980b9; /* Darker blue */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.pageError, .error-message { /* Support both conventions */
+  color: #e74c3c; /* Red for errors */
+  background-color: #fdedec; /* Light red background */
+  border: 1px solid #f5b7b1; /* Reddish border */
+  padding: 12px 18px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* Modal-like styles for the form */
+.formModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Darker semi-transparent backdrop */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top */
+  padding: 20px; /* Padding for smaller screens so modal isn't edge-to-edge */
+  box-sizing: border-box;
+}
+
+.formModalContent {
+  background-color: white;
+  padding: 20px; /* Padding inside the modal */
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  width: 100%; /* Responsive width */
+  max-width: 600px; /* Max width for the form container */
+  max-height: 90vh; /* Max height, allows scrolling within modal */
+  overflow-y: auto; /* Scroll if content is too long */
+  position: relative; /* For potential close button positioning */
+}

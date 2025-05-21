@@ -1,0 +1,107 @@
+.todoItem {
+  background-color: #fff;
+  border: 1px solid #eee;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  transition: box-shadow 0.2s ease-in-out;
+  list-style-type: none;
+}
+
+.todoItem:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.todoItem.completed .title {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.itemHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  margin-right: 12px;
+  transform: scale(1.2); /* Makes checkbox slightly larger */
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+  white-space: pre-wrap; /* Respects newlines and whitespace */
+}
+
+.itemDetails {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 12px;
+  display: flex;
+  flex-wrap: wrap; /* Allow details to wrap on smaller screens */
+  gap: 10px; /* Space between detail items */
+}
+
+.detailItem {
+  background-color: #f8f9fa; /* Light background for each detail */
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+}
+
+.detailItem strong {
+  color: #555;
+}
+
+.itemActions {
+  display: flex;
+  gap: 8px; /* Space between buttons */
+}
+
+.editButton,
+.deleteButton {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.editButton {
+  background-color: #007bff; /* Blue */
+  color: white;
+}
+
+.editButton:hover {
+  background-color: #0056b3;
+}
+
+.editButton:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.deleteButton {
+  background-color: #dc3545; /* Red */
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #c82333;
+}
+
+.deleteButton:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}

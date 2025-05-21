@@ -1,0 +1,44 @@
+.todoList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.todoItem:last-child {
+  border-bottom: none;
+}
+
+.checkbox {
+  margin-right: 10px;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.title {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.completedTitle {
+  font-size: 0.9rem;
+  color: #888;
+  text-decoration: line-through;
+}
+
+.widgetFooter {
+  margin-top: auto; /* Pushes the footer to the bottom of the card */
+  padding-top: 10px;
+  border-top: 1px solid #f0f0f0;
+  text-align: right;
+}
+
+.widgetFooter a {
+  font-size: 0.85rem;
+}

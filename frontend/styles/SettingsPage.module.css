@@ -1,0 +1,84 @@
+.settingsContainer {
+    max-width: 700px;
+}
+
+.settingsSection {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.settingsSection:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.settingsSection h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.settingsSection form div {
+    margin-bottom: 1rem;
+}
+
+.settingsSection label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.settingsSection input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.settingsSection button {
+    background-color: #333;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.settingsSection button:hover {
+    background-color: #555;
+}
+
+.errorMessage, .error-message { /* cater to both conventions */
+    color: #d9534f; /* Bootstrap's danger color */
+    background-color: #f2dede; /* Light red background */
+    border: 1px solid #ebccd1; /* Reddish border */
+    padding: 0.75rem 1.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.successMessage {
+    color: #5cb85c; /* Bootstrap's success color */
+    background-color: #dff0d8; /* Light green background */
+    border: 1px solid #d6e9c6; /* Greenish border */
+    padding: 0.75rem 1.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.deleteButton {
+    background-color: #d9534f !important; /* Bootstrap's danger color, using !important to override general button styles if needed */
+    color: white !important;
+}
+
+.deleteButton:hover {
+    background-color: #c9302c !important; /* Darker red on hover */
+}
